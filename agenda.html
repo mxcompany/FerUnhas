@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="./css/agenda.css">
+    <link rel="stylesheet" href="./css/light.css">
+</head>
+
+<body>
+
+    <div class="seta">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-arrow-left"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+            </svg>
+        </a>
+    </div>
+
+    <div class="container">
+        <div class="left-section">
+            <div class="logo">
+                <img src="./img/F.svg" alt="">
+            </div>
+            <div id="inline-calendar"></div>
+        </div>
+        <div class="right-section">
+            <form id="bookingForm">
+                <h1>Agendamento</h1>
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label for="servico">Serviço:</label>
+                        <select id="servico" name="servico" required>
+                            <option value="">Selecione um serviço</option>
+                            <!-- As opções serão preenchidas via JavaScript -->
+                        </select>
+                        <label for="endereco">Endereço:</label>
+                        <select id="endereco" name="endereco" required>
+                            <option value="">Selecione um endereço</option>
+                            <!-- As opções serão preenchidas via JavaScript -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Horário:</label>
+                        <select id="time" name="time" required>
+                            <option value="">Selecione um horário</option>
+                            <!-- As opções de horários serão preenchidas via JavaScript -->
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="date">Data:</label>
+                    <input type="text" id="date" name="date" required readonly />
+                </div>
+                <div id="button-agenda">
+                    <button type="submit">Agendar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/l10n/pt.js"></script>
+
+    <script src="./js/agenda.js"></script>
+</body>
+
+</html>

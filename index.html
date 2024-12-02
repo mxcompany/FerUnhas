@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>FerUnhas</title>
+
+</head>
+
+<body>
+    <!-- Barra de Progresso -->
+    <div class="progress-bar-container">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+    <div id="menu-nav">
+        <nav>
+            <ul class="ul-main">
+                <div>
+                    <img src="./img/F.svg" alt="">
+                </div>
+                <li><a href="#container">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <div class="flex-svg" id="menu-links">
+                    <a href="login.html" id="login-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                            class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z" />
+                            <path fill-rule="evenodd"
+                                d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z" />
+                        </svg>
+                    </a>
+                </div>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="menu-bar" onclick="menuOnClick()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+    </div>
+
+    <nav class="nav" id="nav">
+        <ul>
+            <li><a href="index.html">Página inicial</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <div id="menuh-links">
+                <li><a href="login.html">Login</a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <div class="menu-bg" id="menu-bg"></div>
+    <div id="container">
+        <div class="esquerda">
+            <h1>Fernanda Ribeiro</h1>
+            <p>Site feito para manicure Fernanda Ribeiro, com intuito de alavancar o trabalho autônomo.</p>
+            <div id="botoes-href">
+                <a href="agenda.html"><button id="schedule-button">Agendar</button></a>
+            </div>
+        </div>
+        <div class="direita">
+            <img src="./img/unha.png" alt="">
+        </div>
+    </div>
+
+
+    <!-- Seção Serviços -->
+    <section id="servicos" class="servicos">
+        <h2>Sobre</h2>
+        <div class="servicos-lista">
+            <div class="servico">
+                <img src="./img/fernanda.jpeg" alt="">
+                <h3>Sobre mim</h3>
+                <p>Olá, me chamo Fernanda Ribeiro, trabalho como manicure há 20 anos com atendimento a domicílio. Minha
+                    maior recompensa é ver minhas clientes satisfeitas com meu trabalho e com a autoestima renovada após
+                    depositarem confiança nos meus serviços, nos quais são: manicure, pedicure e depilação.</p>
+            </div>
+            <div class="servico">
+                <img src="./img/2.png" alt="">
+                <h3>Sobre o serviço</h3>
+                <p>Bem-vindo ao FerUnhas, onde ofereço os melhores serviços de cuidados com as unhas. Minha missão é
+                    proporcionar um atendimento excepcional com qualidade e dedicação, visando atender as
+                    particularidades
+                    de cada cliente e seus gostos.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Seção Galeria -->
+    <section id="galeria" class="galeria">
+        <h2>Galeria de Trabalhos</h2>
+        <div class="galeria-imagens">
+            <img src="./img/1.png" alt="Unhas decoradas 1">
+            <img src="./img/2.png" alt="Unhas decoradas 2">
+            <img src="./img/3.jpg" alt="Unhas decoradas 3">
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-4 col-xs-12">
+                    <div class="single_footer">
+                        <h4>Contato</h4>
+                        <ul>
+                            <li><a href="#"><img src="./img/icons8-github-120.png" alt="GitHub Icon">Giovana Duarte</a>
+                            </li>
+                            <li><a href="#"><img src="./img/icons8-github-120.png" alt="GitHub Icon">Giovanna Rocha</a>
+                            </li>
+                            <li><a href="#"><img src="./img/icons8-github-120.png" alt="GitHub Icon">MxCompany</a></li>
+                            <li><a href="#"><img src="./img/icons8-github-120.png" alt="GitHub Icon">Paola de
+                                    Oliveira</a></li>
+                            <li><a href="#"><img src="./img/icons8-github-120.png" alt="GitHub Icon">Vitor Fogaça</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!--- END COL -->
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="single_footer single_footer_address">
+                        <h4>Feedback</h4>
+                        <div class="signup_form">
+                            <form action="#" class="subscribe">
+                                <input type="text" class="subscribe__input" id="feedback-input"
+                                    placeholder="Deixe um feedback">
+                                <button type="button" class="subscribe__btn" onclick="postFeedback()"><i
+                                        class="fas fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="social_profile">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div><!--- END COL -->
+            </div><!--- END ROW -->
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-xs-12">
+                    <p class="copyright">Copyright © 2024 <a href="#">MXCompany</a>.</p>
+                </div><!--- END COL -->
+            </div><!--- END ROW -->
+        </div><!--- END CONTAINER -->
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
