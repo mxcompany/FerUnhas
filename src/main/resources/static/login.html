@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <div class="seta">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-arrow-left"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+            </svg>
+        </a>
+    </div>
+    <div class="container">
+        <div class="form-image">
+
+            <div id="header-container">
+                <h1>Fernanda Ribeiro</h1>
+                <div id="subtitle">UNHAS</div>
+            </div>
+            <img src="img/unha.png" alt="">
+        </div>
+
+        <div class="input-group">
+
+            <h2>Realize seu login</h2>
+            <div class="input-box">
+                <input id="email" type="email" name="email" placeholder="E-mail" required>
+            </div>
+
+            <div class="input-box">
+                <input id="password" type="password" name="password" placeholder="Senha" required>
+            </div>
+
+            <div class="continue-button">
+                <button type="button" onclick="loginUsuario()">LOGAR</button>
+            </div>
+            <p class="cadastro"><a href="cadastro.html">Não tenho cadastro.</a></p>
+        </div>
+    </div>
+    </div>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>

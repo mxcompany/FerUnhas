@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="./css/agendaAdmin.css">
+    <link rel="stylesheet" href="./css/light.css">
+</head>
+
+<body>
+
+    <div class="seta">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-arrow-left"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+            </svg>
+        </a>
+    </div>
+
+    <div class="container">
+        <div class="left-section">
+            <div class="logo">
+                <img src="./img/F.svg" alt="">
+            </div>
+            <div id="inline-calendar"></div>
+        </div>
+        <div class="right-section">
+            <form id="bookingForm">
+                <h1>Serviços / Horário</h1>
+                <div class="info-campo">
+                    <div class="flex-edit">
+                        <h3>Serviço:</h3>
+                        <ul id="servicos-lista">
+                            <li id="servico-nao-cadastrado"></li>
+                        </ul>
+                    </div>
+                    <span class="edit-icon" onclick="toggleEditarServico()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-pencil-square" viewBox="0 0 16 16">
+                            <path
+                                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                            <path fill-rule="evenodd"
+                                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z" />
+                        </svg>
+                    </span>
+                </div>
+
+                <!-- Área de editar serviço (inicialmente oculta) -->
+                <div class="editar-info" id="editar-servico" style="display: none;">
+                    <!-- Adicionar Novo Serviço -->
+                    <h3>Adicionar Serviço</h3>
+                    <div class="campo-editar">
+                        <input type="text" id="novo-servico" placeholder="Novo serviço" class="input-editar">
+                        <input type="text" id="preco-servico" placeholder="Preço do serviço" class="input-editar">
+                        <button id="adicionar-servico" onclick="adicionarServico()">Adicionar</button>
+                    </div>
+
+                    <!-- Remover Serviço -->
+                    <h3>Remover Serviço</h3>
+                    <div class="campo-editar">
+                        <select id="remover-servico" class="input-editar">
+                            <option value="">Selecione um serviço para remover</option>
+                        </select>
+                        <button onclick="deletarServico()">Excluir</button>
+                    </div>
+
+                    <!-- Editar Serviço Existente -->
+                    <h3>Editar Serviço</h3>
+                    <div class="campo-editar">
+                        <select id="editar-servico-selecionado" class="input-editar">
+                            <option value="">Selecione um serviço para editar</option>
+                        </select>
+                        <input type="text" id="novo-nome-servico" placeholder="Novo nome do serviço"
+                            class="input-editar">
+                        <input type="text" id="novo-preco-servico" placeholder="Novo preço do serviço"
+                            class="input-editar">
+                        <button onclick="editarServico()" id="btn-editar">Editar</button>
+                    </div>
+                </div>
+
+                <div class="form-group" id="horario">
+                    <h3 for="time">Horário:</h3>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <div class="form-group">
+                    <input type="hidden" id="date" name="date" required>
+                </div>
+                <div id="button-agenda">
+                    <button type="submit">Agendar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="./js/agendaAdmin.js"></script>
+</body>
+
+</html>

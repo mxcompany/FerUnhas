@@ -1,0 +1,221 @@
+body{
+    background: #ff80ab;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: #e9e9e9;
+    padding: 5%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    width: 70%;
+    height: auto;
+    display: flex; /* Torna o container um flexbox */
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.left-section {
+    flex: 1; /* Ocupa 2 partes do espaço */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.right-section {
+    flex: 1; /* Ocupa 1 parte do espaço */
+    display: flex;
+    flex-direction: column;
+    gap: 1%; /* Espaçamento entre os inputs e botão */
+    width: 50%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    font-family: Arial, sans-serif   ;
+}
+
+.form-group {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group select{
+    padding: 2%;
+    margin-bottom: 5%;
+    width: 90%;
+    border-radius: 10px;
+}
+
+label {
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+input {
+    width: 90%; /* Ajusta a largura ao container */
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+#button-agenda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+button {
+    padding: 10px 30px;
+    background-color: #ff80ab;
+    font-weight: bold;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 50%;
+}
+
+button:hover {
+    background-color: #ff54b2;
+}
+
+.seta{
+    position: fixed;
+    top: 2%;
+    left: 2%;
+}
+
+.seta a{
+    color: black;
+}
+
+.seta a:hover{
+    color: gray;
+}
+
+.logo img{
+    width: 80px;
+    margin-top: 30px;
+}
+
+
+
+@media (max-width: 768px){
+    .container{
+        flex-direction: column;
+        margin: 80% 15% 20% 15%;
+        display: flex;
+        height: max-content;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+    button {
+        margin-top: 10px;
+        width: 100%;
+        padding: 10px;
+        background-color: #ff80ab;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+    }
+}
+
+@media (max-width: 1024px){
+    .container{
+        width: 85%;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    body {
+        background: #ff80ab;
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        height: auto;
+        margin-top: 15%;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    .logo img {
+        width: 50px;
+    }
+
+    .flatpickr-calendar {
+        margin-right: 16px;
+    }
+
+    label {
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+    }
+
+    .right-section{
+        margin-top: 10%;
+    }
+
+
+    input {
+        width: 100%; /* Ajusta a largura ao container */
+        padding: 6px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+
+    /* Agrupando endereço e horário lado a lado */
+    .form-group-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .form-group-row .form-group {
+        flex: 1;
+        margin-right: 10px;
+    }
+
+    .form-group-row .form-group:last-child {
+        margin-right: 0;
+    }
+
+    button {
+        margin-top: 10px;
+        width: 100%;
+        padding: 10px;
+        background-color: #ff80ab;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .seta svg {
+        width: 80%;
+    }
+}
