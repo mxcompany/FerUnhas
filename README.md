@@ -2,7 +2,7 @@
 
 Projeto desenvolvido por MXCompany com intuito de resolver um problema real, onde é feito um agendamento para melhor visualização e interação do cliente e do prestador de serviço (Fernanda Ribeiro), mãe de uma das integrantes do squad.
 
-![image](https://github.com/user-attachments/assets/de0fa7b1-6a69-4948-b882-ae3f606440a5)
+![ferunhas](https://github.com/user-attachments/assets/d927616f-1233-47c3-af0b-ab7c0d0c4668)
 
 ## 🚀 Começando
 É necessário o download do projeto para testar em sua máquina.
@@ -12,9 +12,9 @@ Projeto desenvolvido por MXCompany com intuito de resolver um problema real, ond
 É preciso rodar a API no Spring Boot que irá gerar o banco de dados no MySQL, após isso é possível verificar o projeto rodando localmente em seu navegador.
 
 ## 🔧 Instalação
-https://www.google.com/intl/pt-BR/chrome/
-https://dev.mysql.com/downloads/mysql/8.0.html
-https://spring.io/tools
+https://www.google.com/intl/pt-BR/chrome/ <br>
+https://dev.mysql.com/downloads/mysql/8.0.html <br>
+https://spring.io/tools <br>
 https://www.postman.com/downloads/
 
 ## ⚙️ Executando os testes
@@ -23,25 +23,25 @@ https://www.postman.com/downloads/
 ## 🔩 Analise os testes de ponta a ponta
 Conforme o desenvolvimento, foi realizado testes paralelamente, seja por funções de front-end ou requisições do back-end.
 
-##⌨️ Testes de codificação (HTML e CSS segundo a W3C, por exemplo)
+## ⌨️ Testes de codificação (HTML e CSS segundo a W3C, por exemplo)
 Verificação do HTML pelo W3C e funcionamento pelo navegador, testando responsividade e navegação.
 
 ## 📦 Implantação
 Importar o projeto para o framework Spring Boot, possibilitando executar a API.
 
 ## 🛠️ Construído com
-https://spring.io/
-https://code.visualstudio.com/
-https://www.mysql.com/
+https://spring.io/ <br>
+https://code.visualstudio.com/ <br>
+https://www.mysql.com/ <br>
 https://www.postman.com/
 
 ## 📌 Versão
 Versão 1.0
 
 ## ✒️ Autores
-Giovana Duarte - Documentação, propotipagem, modelagem e design.
-Giovanna Rocha - Documentação, propotipagem, modelagem e design.
-Paola de Oliveira - Desenvolvimento HTML e CSS.
+Giovana Duarte - Documentação, propotipagem, modelagem e design. <br>
+Giovanna Rocha - Documentação, propotipagem, modelagem e design. <br>
+Paola de Oliveira - Desenvolvimento HTML e CSS. <br>
 Vitor Fogaça - Desenvolvimento front-end (JavaScript) e back-end (Spring Boot).
 
 ## 📄 Licença
