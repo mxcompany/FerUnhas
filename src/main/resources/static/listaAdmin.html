@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="./css/listaAdmin.css">
+    <link rel="stylesheet" href="./css/light.css">
+</head>
+
+<body>
+
+    <div class="seta">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-arrow-left"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+            </svg>
+        </a>
+    </div>
+
+    <div class="container">
+        <div class="right-section">
+            <form id="bookingForm">
+                <h1>Lista de horários marcados</h1>
+                <div class="info-campo">
+                    <div class="flex-edit">
+                        <h3>Horários:</h3>
+                        <ul id="horarios-lista">
+                            <li id="horario-vazio"></li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="./js/listaAdmin.js"></script>
+</body>
+
+</html>
